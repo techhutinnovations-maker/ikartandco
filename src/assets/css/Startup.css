@@ -1,0 +1,295 @@
+/* --- WoodFund.css (Mobile-First, Fully Responsive) --- */
+
+/* --- Base & Typography --- */
+.wood-fund-wrapper {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #09090b; /* Deep Zinc Black */
+  color: #e4e4e7; /* Zinc 200 */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wood-fund-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* --- Hero Section --- */
+.wood-fund-hero {
+  padding: 60px 0 40px;
+  text-align: center;
+  border-bottom: 1px solid #27272a; /* Zinc 800 */
+}
+
+.wood-fund-brand {
+  color: #f59e0b; 
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  border: 1px solid #78350f; 
+  padding: 6px 12px;
+  border-radius: 4px;
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.wood-fund-headline {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+  color: #ffffff;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.wood-fund-headline span {
+  background: linear-gradient(to right, #f59e0b, #d97706);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #f59e0b; /* fallback */
+}
+
+.wood-fund-subheadline {
+  font-size: 0.95rem;
+  color: #a1a1aa; /* Zinc 400 */
+  max-width: 100%;
+  margin: 0 auto 20px auto;
+  font-weight: 300;
+}
+
+/* --- Stats Grid --- */
+.wood-fund-stats-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-top: 40px;
+  padding: 20px;
+  background: #18181b; /* Zinc 900 */
+  border-radius: 12px;
+  border: 1px solid #27272a; /* Zinc 800 */
+}
+
+.wood-fund-stat-item {
+  text-align: center;
+}
+
+.wood-fund-stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fcd34d; /* Light Amber */
+}
+
+.wood-fund-stat-label {
+  color: #71717a; /* Zinc 500 */
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 5px;
+  display: block;
+}
+
+/* --- Investment Thesis (Focus Areas) --- */
+.wood-fund-section {
+  padding: 60px 0;
+}
+
+.wood-fund-section-title {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  border-left: 4px solid #f59e0b; /* Amber Accent */
+  padding-left: 16px;
+}
+
+.wood-fund-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.wood-fund-thesis-card {
+  background: #18181b; /* Zinc 900 */
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #27272a; /* Zinc 800 */
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.wood-fund-thesis-card:hover {
+  transform: translateY(-5px);
+  border-color: #f59e0b;
+}
+
+.wood-fund-icon {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  display: block;
+  filter: grayscale(100%);
+}
+
+.wood-fund-thesis-card:hover .wood-fund-icon {
+  filter: grayscale(0%);
+}
+
+.wood-fund-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 8px 0;
+}
+
+.wood-fund-card-desc {
+  color: #a1a1aa; /* Zinc 400 */
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* --- Portfolio Companies --- */
+.wood-fund-portfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wood-fund-startup-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #18181b;
+  border: 1px solid #27272a;
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+
+.wood-fund-startup-card:hover {
+  border-color: #fbbf24;
+  background-color: #27272a;
+}
+
+.wood-fund-startup-info h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.wood-fund-startup-info p {
+  margin: 0;
+  color: #a1a1aa;
+  max-width: 100%;
+  font-size: 0.875rem;
+}
+
+.wood-fund-tag {
+  background: #27272a;
+  color: #d4d4d8;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  border: 1px solid #3f3f46;
+  margin-top: 10px;
+}
+
+/* --- Call to Action (Funding) --- */
+.wood-fund-cta-box {
+  background: linear-gradient(135deg, #27272a 0%, #451a03 100%);
+  padding: 40px 20px;
+  border-radius: 16px;
+  text-align: center;
+  margin-top: 30px;
+  border: 1px solid #3f3f46;
+}
+
+.wood-fund-cta-title {
+  font-size: 1.75rem;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.wood-fund-cta-box p {
+  color: #e4e4e7 !important;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.wood-fund-btn {
+  background-color: #f59e0b;
+  color: #000;
+  border: none;
+  padding: 14px 0;
+  width: 100%;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.wood-fund-btn:hover {
+  background-color: #fbbf24;
+  transform: scale(1.02);
+}
+
+/* --- Larger Screens Overrides --- */
+@media (min-width: 768px) {
+  .wood-fund-headline {
+    font-size: 3.75rem;
+  }
+
+  .wood-fund-subheadline {
+    font-size: 1.25rem;
+    max-width: 650px;
+  }
+
+  .wood-fund-stats-row {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    margin-top: 60px;
+  }
+
+  .wood-fund-thesis-card {
+    padding: 30px;
+  }
+
+  .wood-fund-grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+
+  .wood-fund-startup-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .wood-fund-tag {
+    margin-top: 0;
+  }
+
+  .wood-fund-cta-box {
+    padding: 60px;
+  }
+
+  .wood-fund-cta-title {
+    font-size: 2.25rem;
+  }
+
+  .wood-fund-btn {
+    width: auto;
+    padding: 16px 32px;
+    font-size: 1rem;
+  }
+}

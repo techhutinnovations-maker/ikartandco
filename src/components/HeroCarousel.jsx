@@ -1,0 +1,110 @@
+import React, { useState, useEffect } from 'react';
+import '../assets/css/HeroCarousel.css';
+import building from '../assets/images/building.jpg';
+import living from '../assets/images/living.jpg';
+import startup from '../assets/images/startup.jpg';
+import firstwood from '../assets/images/firstwood.jpg';
+import { useNavigate } from 'react-router-dom';
+
+
+const slides = [
+  {
+    // Image: Carpenter working / Workshop vibe
+    bg: firstwood,
+    title: "Masterful Craftsmanship",
+    desc: "Experience the art of woodworking with premium materials and centuries-old techniques designed to last a lifetime.",
+    btnText: "Explore Collection",
+    btnColor: "#d35400", 
+    link: "/aboutus"
+  },
+  {
+    // Image: Modern Wood Interior / Furniture
+    bg: living,
+    title: "Timeless Wood Interiors",
+    desc: "Transform your living space with sustainable, hand-crafted furniture that brings warmth and elegance to any room.",
+    btnText: "View Gallery",
+    btnColor: "#8d6e63", // Brownish/Taupe
+    link: "/aboutus"
+  },
+  {
+    // Image: Close up raw wood texture / Nature
+    bg: building,
+    title: "Premium Raw Materials",
+    desc: "Sourced from the finest forests, our timber ensures durability, distinct grain patterns, and natural beauty.",
+    btnText: "Our Materials",
+    btnColor: "#5d4037", 
+    link: "/procurement"
+  },
+  {
+    bg: startup,
+    title: "Start Your Dream Project",
+    desc: "From custom wooden furniture to full interior setups — our expert craftsmen turn your vision into reality with precision and passion.",
+    btnText: "Start a Project",
+    btnColor: "#a05a2c",  // warm wood tone
+    link: "/startup"
+  }
+];
+
+const HeroCarousel = () => {
+  const [current, setCurrent] = useState(0);
+  const navigate = useNavigate();
+
+
+  // Auto-play logic
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const goToSlide = (index) => setCurrent(index);
+
+  return (
+    <div className="hero-carousel">
+      {slides.map((slide, index) => (
+        <div
+          key={index}
+          className={`hero-slide ${index === current ? 'active' : ''}`}
+        >
+          <div
+            className="slide-bg"
+            style={{ backgroundImage: `url(${slide.bg})` }}
+          />
+
+          <div className="hero-overlay"></div>
+
+          <div className="hero-content">
+            <div className="hero-text">
+              <h1 className="hero-title">{slide.title}</h1>
+              <p className="hero-desc">{slide.desc}</p>
+              <button
+                className="hero-btn"
+                style={{ '--btn-color': slide.btnColor }}
+                onClick={() => navigate(slide.link)}
+              >
+                {slide.btnText}
+              </button>
+
+            </div>
+          </div>
+        </div>
+      ))}
+
+      {/* Modern Line Indicators */}
+      <div className="indicators-container">
+        {slides.map((_, index) => (
+          <div
+            key={index}
+            className={`indicator-line ${index === current ? 'active' : ''}`}
+            onClick={() => goToSlide(index)}
+          >
+            <div className="progress-bar"></div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default HeroCarousel;
