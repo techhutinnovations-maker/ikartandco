@@ -1,4 +1,3 @@
-/* WoodProcurement.css */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Inter:wght@400;600&display=swap');
 
 .procurement-page {
@@ -101,7 +100,7 @@
   background: #f0f4f1;
   padding: 10px 18px;
   border-radius: 50px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   color: #2c3e50;
   display: flex;
@@ -109,6 +108,11 @@
   gap: 8px;
   border: 1px solid transparent;
   transition: all 0.3s;
+}
+
+.tree-icon-inner {
+    color: #27ae60;
+    font-size: 16px;
 }
 
 .wood-tag:hover {
@@ -125,17 +129,17 @@
 
 .source-list li {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 15px;
   margin-bottom: 18px;
   font-size: 16px;
-  line-height: 1.5;
   color: #ddd;
 }
 
-.check-icon {
+.check-icon-svg {
   color: #ff6b35;
-  font-weight: bold;
+  font-size: 18px;
+  flex-shrink: 0;
 }
 
 /* --- Section 2: Process --- */
@@ -181,7 +185,7 @@
 .step-num {
   font-size: 40px;
   font-weight: 900;
-  color: #f0f0f0;
+  color: #f6f6f6;
   position: absolute;
   top: 10px;
   right: 20px;
@@ -204,7 +208,7 @@
   z-index: 1;
 }
 
-/* --- Section 3: Trust --- */
+/* --- Section 3: Trust (Updated Icons) --- */
 .wp-trust-section {
   text-align: center;
   margin-bottom: 100px;
@@ -220,22 +224,23 @@
 .trust-item {
   background: white;
   padding: 25px;
-  border-radius: 8px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   gap: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
   text-align: left;
-  transition: transform 0.2s;
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
 }
 
 .trust-item:hover {
-  transform: scale(1.02);
-  background: #fff8f5;
+  transform: translateY(-5px);
+  border-color: #ff6b35;
+  box-shadow: 0 8px 20px rgba(255,107,53,0.1);
 }
 
 .trust-icon {
-  font-size: 24px;
   background: #ff6b35;
   color: white;
   width: 50px;
@@ -245,6 +250,15 @@
   justify-content: center;
   border-radius: 50%;
   flex-shrink: 0;
+  font-size: 20px;
+  box-shadow: 0 4px 10px rgba(255, 107, 53, 0.3);
+}
+
+.trust-item p {
+    font-weight: 600;
+    font-size: 15px;
+    color: #444;
+    line-height: 1.4;
 }
 
 /* --- Section 4: Auction --- */
@@ -255,7 +269,7 @@
   border-radius: 16px;
   padding: 60px 50px;
   overflow: hidden;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   border: 1px solid #333;
 }
 
@@ -303,15 +317,23 @@
   padding-bottom: 10px;
 }
 
-.auction-col ul {
+.icon-list {
   list-style: none;
   padding: 0;
 }
 
-.auction-col li {
-  font-size: 17px;
+.icon-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
   margin-bottom: 15px;
   color: #ccc;
+}
+
+.list-icon {
+    color: #ff6b35;
+    font-size: 16px;
 }
 
 .auction-divider {
@@ -324,38 +346,47 @@
   text-align: center;
   background: #ff6b35;
   color: white;
-  padding: 40px;
+  padding: 60px 40px;
   border-radius: 12px;
+  margin-bottom: 40px;
 }
 
 .wp-cta h3 {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 800;
   margin-bottom: 10px;
 }
 
+.wp-cta p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
 .wp-btn {
-  margin-top: 20px;
-  padding: 12px 30px;
+  margin-top: 30px;
+  padding: 15px 40px;
   background: white;
   color: #ff6b35;
   border: none;
-  font-weight: 700;
+  font-weight: 800;
   border-radius: 50px;
   cursor: pointer;
   font-size: 16px;
-  transition: transform 0.2s;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .wp-btn:hover {
-  transform: scale(1.05);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .wp-sourcing-grid { grid-template-columns: 1fr; }
   .auction-split { flex-direction: column; gap: 30px; }
-  .auction-divider { width: 100%; height: 1px; }
+  .auction-divider { display: none; }
   .wp-title { font-size: 32px; }
   .wp-header { padding: 60px 5%; }
+  .wp-auction-section { padding: 40px 20px; }
 }

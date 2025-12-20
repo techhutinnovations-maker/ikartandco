@@ -1,12 +1,18 @@
 import React from 'react';
 import '../assets/css/IndustrialSupply.css';
 
+import { 
+  MdFactory, 
+  MdConstruction, 
+  MdLocalShipping 
+} from 'react-icons/md';
+
 const IndustrialSupply = () => {
   
   const industries = [
     {
       title: "Plywood & MDF Manufacturers",
-      icon: "🏭",
+        icon: <MdFactory />,
       desc: "We supply raw wood to top plywood and panel brands.",
       clients: [
         "Century Ply", "Greenply", "Greenpanel", 
@@ -15,7 +21,7 @@ const IndustrialSupply = () => {
     },
     {
       title: "Paper Mills",
-      icon: "📜",
+        icon: <MdLocalShipping />,
       desc: "Bulk supply of industrial wood to leading mills.",
       clients: [
         "TNPL", "Andhra Paper", "Kolar Paper Mills", 
@@ -24,10 +30,10 @@ const IndustrialSupply = () => {
     },
     {
       title: "Construction Industry",
-      icon: "🏗️",
+       icon: <MdConstruction />,
       desc: "Supply of construction wood bars (Shuttering & Scaffolding).",
       clients: [
-        "Pune Region", "Mumbai Region", "Delhi NCR", 
+        "Andhra Pradesh","Telangana","Pune Region", "Mumbai Region", "Delhi NCR", 
         "North India Cities", "Wholesalers", "Contractors"
       ]
     }
@@ -56,7 +62,7 @@ const IndustrialSupply = () => {
       <header className="ind-header">
         <div className="ind-header-overlay"></div>
         <div className="ind-header-content">
-          <span className="ind-tag">B2B Supply Chain</span>
+          <span className="ind-tag">ikartandco</span>
           <h1 className="ind-title">Industrial Supply & Logistics</h1>
           <p className="ind-subtitle">
             ikartandco supplies bulk wood to major industries across India. 

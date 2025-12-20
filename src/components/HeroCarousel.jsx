@@ -12,7 +12,7 @@ const slides = [
     // Image: Carpenter working / Workshop vibe
     bg: firstwood,
     title: "Masterful Craftsmanship",
-    desc: "Experience the art of woodworking with premium materials and centuries-old techniques designed to last a lifetime.",
+    desc: "Experience the art of wood supply with premium-grade materials engineered to meet modern manufacturing standards.",
     btnText: "Explore Collection",
     btnColor: "#d35400", 
     link: "/aboutus"
@@ -21,7 +21,7 @@ const slides = [
     // Image: Modern Wood Interior / Furniture
     bg: living,
     title: "Timeless Wood Interiors",
-    desc: "Transform your living space with sustainable, hand-crafted furniture that brings warmth and elegance to any room.",
+    desc: "Supplying sustainable, premium-grade wood materials that support plywood, furniture, and paper manufacturing at scale.",
     btnText: "View Gallery",
     btnColor: "#8d6e63", // Brownish/Taupe
     link: "/aboutus"

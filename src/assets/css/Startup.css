@@ -1,295 +1,256 @@
-/* --- WoodFund.css (Mobile-First, Fully Responsive) --- */
+:root {
+  --bg: #050505;
+  --card-bg: rgba(20, 20, 22, 0.6);
+  --border: rgba(255, 255, 255, 0.08);
+  --accent: #f59e0b;
+  --accent-glow: rgba(245, 158, 11, 0.15);
+  --text-main: #fafafa;
+  --text-dim: #a1a1aa;
+}
 
-/* --- Base & Typography --- */
-.wood-fund-wrapper {
-  font-family: 'Inter', 'Segoe UI', sans-serif;
-  background-color: #09090b; /* Deep Zinc Black */
-  color: #e4e4e7; /* Zinc 200 */
+.ss-wrapper {
+  background-color: var(--bg);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
+  position: relative;
+  overflow-x: hidden;
+  padding-bottom: 100px;
 }
 
-.wood-fund-container {
-  max-width: 1140px;
+/* Background Glows */
+.ss-glow {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  z-index: 0;
+  filter: blur(60px);
+  pointer-events: none;
+}
+.ss-glow-1 { top: -10%; right: -10%; }
+.ss-glow-2 { bottom: 20%; left: -10%; }
+
+.ss-container {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
 }
 
-/* --- Hero Section --- */
-.wood-fund-hero {
-  padding: 60px 0 40px;
+/* Hero Section */
+.ss-hero {
+  padding: 140px 0 80px;
   text-align: center;
-  border-bottom: 1px solid #27272a; /* Zinc 800 */
 }
 
-.wood-fund-brand {
-  color: #f59e0b; 
-  font-weight: 700;
-  letter-spacing: 0.1em;
+.ss-badge {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-size: 0.85rem;
-  margin-bottom: 1.5rem;
-  display: inline-block;
-  border: 1px solid #78350f; 
-  padding: 6px 12px;
-  border-radius: 4px;
-  background: rgba(245, 158, 11, 0.1);
+  color: var(--accent);
 }
 
-.wood-fund-headline {
-  font-size: 2rem;
+.ss-title {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
   font-weight: 800;
-  margin: 0 0 1rem 0;
-  color: #ffffff;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+  line-height: 1.05;
+  margin: 24px 0;
+  letter-spacing: -0.03em;
 }
 
-.wood-fund-headline span {
-  background: linear-gradient(to right, #f59e0b, #d97706);
+.ss-gradient-text {
+  background: linear-gradient(to bottom right, #f59e0b, #fbbf24, #d97706);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #f59e0b; /* fallback */
 }
 
-.wood-fund-subheadline {
-  font-size: 0.95rem;
-  color: #a1a1aa; /* Zinc 400 */
-  max-width: 100%;
-  margin: 0 auto 20px auto;
-  font-weight: 300;
+.ss-subtitle {
+  font-size: 1.15rem;
+  color: var(--text-dim);
+  max-width: 650px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
 }
 
-/* --- Stats Grid --- */
-.wood-fund-stats-row {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
-  margin-top: 40px;
-  padding: 20px;
-  background: #18181b; /* Zinc 900 */
-  border-radius: 12px;
-  border: 1px solid #27272a; /* Zinc 800 */
+.ss-hero-btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
 }
 
-.wood-fund-stat-item {
-  text-align: center;
+.ss-btn-primary {
+  background: var(--accent);
+  color: #000;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s;
 }
 
-.wood-fund-stat-number {
-  display: block;
+.ss-btn-secondary {
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+}
+
+/* Bento Grid */
+.ss-section {
+  padding: 100px 0;
+}
+
+.ss-section-header {
+  margin-bottom: 50px;
+}
+
+.ss-section-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #fcd34d; /* Light Amber */
 }
 
-.wood-fund-stat-label {
-  color: #71717a; /* Zinc 500 */
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-top: 5px;
-  display: block;
-}
-
-/* --- Investment Thesis (Focus Areas) --- */
-.wood-fund-section {
-  padding: 60px 0;
-}
-
-.wood-fund-section-title {
-  font-size: 1.5rem;
-  color: #ffffff;
-  margin-bottom: 2rem;
-  border-left: 4px solid #f59e0b; /* Amber Accent */
-  padding-left: 16px;
-}
-
-.wood-fund-grid-3 {
+.ss-bento-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 250px);
   gap: 20px;
 }
 
-.wood-fund-thesis-card {
-  background: #18181b; /* Zinc 900 */
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #27272a; /* Zinc 800 */
-  transition: transform 0.3s ease, border-color 0.3s ease;
+.ss-bento-item {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 32px;
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.wood-fund-thesis-card:hover {
-  transform: translateY(-5px);
-  border-color: #f59e0b;
+.ss-bento-item:hover {
+  border-color: var(--accent);
+  background: rgba(255,255,255,0.05);
 }
 
-.wood-fund-icon {
-  font-size: 1.5rem;
-  margin-bottom: 16px;
-  display: block;
-  filter: grayscale(100%);
-}
+.ss-bento-item.tall { grid-row: span 2; }
+.ss-bento-item.wide { grid-column: span 2; }
 
-.wood-fund-thesis-card:hover .wood-fund-icon {
-  filter: grayscale(0%);
-}
-
-.wood-fund-card-title {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #fff;
-  margin: 0 0 8px 0;
-}
-
-.wood-fund-card-desc {
-  color: #a1a1aa; /* Zinc 400 */
-  font-size: 0.875rem;
-  margin: 0;
-}
-
-/* --- Portfolio Companies --- */
-.wood-fund-portfolio-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.wood-fund-startup-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: #18181b;
-  border: 1px solid #27272a;
-  padding: 20px;
-  border-radius: 12px;
-  transition: all 0.2s;
-}
-
-.wood-fund-startup-card:hover {
-  border-color: #fbbf24;
-  background-color: #27272a;
-}
-
-.wood-fund-startup-info h3 {
-  margin: 0 0 8px 0;
-  font-size: 1.25rem;
-  color: #fff;
-}
-
-.wood-fund-startup-info p {
-  margin: 0;
-  color: #a1a1aa;
-  max-width: 100%;
-  font-size: 0.875rem;
-}
-
-.wood-fund-tag {
-  background: #27272a;
-  color: #d4d4d8;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  white-space: nowrap;
-  border: 1px solid #3f3f46;
-  margin-top: 10px;
-}
-
-/* --- Call to Action (Funding) --- */
-.wood-fund-cta-box {
-  background: linear-gradient(135deg, #27272a 0%, #451a03 100%);
-  padding: 40px 20px;
-  border-radius: 16px;
-  text-align: center;
-  margin-top: 30px;
-  border: 1px solid #3f3f46;
-}
-
-.wood-fund-cta-title {
-  font-size: 1.75rem;
-  color: #fff;
-  margin-bottom: 16px;
-}
-
-.wood-fund-cta-box p {
-  color: #e4e4e7 !important;
-  font-size: 0.9rem;
+.ss-icon {
+  font-size: 2rem;
   margin-bottom: 20px;
+  display: block;
 }
 
-.wood-fund-btn {
-  background-color: #f59e0b;
-  color: #000;
-  border: none;
-  padding: 14px 0;
-  width: 100%;
+.ss-bento-item h3 {
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+}
+
+.ss-bento-item p {
+  color: var(--text-dim);
   font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Approach Section */
+.ss-approach-box {
+  background: radial-gradient(circle at top left, rgba(245,158,11,0.05), transparent);
+  border-radius: 40px;
+  border: 1px solid var(--border);
+  padding: 60px;
+}
+
+.ss-approach-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.ss-num {
+  font-family: serif;
+  font-style: italic;
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.ss-approach-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.ss-approach-card p {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+/* CTA Section */
+.ss-cta-section {
+  padding: 80px 0;
+}
+
+.ss-cta-inner {
+  background: linear-gradient(135deg, #18181b 0%, #2d1a05 100%);
+  border: 1px solid var(--border);
+  border-radius: 32px;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.ss-cta-inner h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.ss-btn-glow {
+  display: inline-block;
+  margin-top: 30px;
+  background: var(--accent);
+  color: #000;
+  padding: 18px 40px;
+  border-radius: 12px;
   font-weight: 700;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+  transition: all 0.3s;
 }
 
-.wood-fund-btn:hover {
-  background-color: #fbbf24;
-  transform: scale(1.02);
+.ss-btn-glow:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 35px rgba(245, 158, 11, 0.5);
 }
 
-/* --- Larger Screens Overrides --- */
-@media (min-width: 768px) {
-  .wood-fund-headline {
-    font-size: 3.75rem;
+/* Responsive */
+@media (max-width: 1024px) {
+  .ss-bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
   }
-
-  .wood-fund-subheadline {
-    font-size: 1.25rem;
-    max-width: 650px;
+  .ss-bento-item.tall, .ss-bento-item.wide {
+    grid-row: span 1;
+    grid-column: span 1;
   }
-
-  .wood-fund-stats-row {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 30px;
-    margin-top: 60px;
+  .ss-approach-grid {
+    grid-template-columns: 1fr;
   }
+}
 
-  .wood-fund-thesis-card {
-    padding: 30px;
+@media (max-width: 640px) {
+  .ss-bento-grid {
+    grid-template-columns: 1fr;
   }
-
-  .wood-fund-grid-3 {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-  }
-
-  .wood-fund-startup-card {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-  }
-
-  .wood-fund-tag {
-    margin-top: 0;
-  }
-
-  .wood-fund-cta-box {
-    padding: 60px;
-  }
-
-  .wood-fund-cta-title {
-    font-size: 2.25rem;
-  }
-
-  .wood-fund-btn {
-    width: auto;
-    padding: 16px 32px;
-    font-size: 1rem;
+  .ss-hero-btns {
+    flex-direction: column;
   }
 }

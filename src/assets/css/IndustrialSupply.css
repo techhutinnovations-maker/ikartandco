@@ -185,7 +185,7 @@
   gap: 8px;
 }
 
-.check { color: #ff6b35; }
+/* .check { color: #ff6b35; } */
 
 /* --- Section 3: Logistics --- */
 .logistics-section {
@@ -334,9 +334,156 @@
   line-height: 1.5;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .logistics-grid { grid-template-columns: 1fr; }
-  .ind-title { font-size: 36px; }
-  .wood-types-banner { padding: 30px; }
+/* =========================
+   Mobile & Tablet Responsive
+   ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .ind-header {
+    padding: 80px 5%;
+    margin-bottom: 60px;
+  }
+
+  .ind-title {
+    font-size: 40px;
+  }
+
+  .industries-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .logistics-visual {
+    height: 320px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+
+  /* Global spacing */
+  .ind-container {
+    padding: 0 20px;
+  }
+
+  /* Header */
+  .ind-header {
+    padding: 60px 20px;
+  }
+
+  .ind-title {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .ind-subtitle {
+    font-size: 16px;
+  }
+
+  /* Section Headings */
+  .section-head h2,
+  .why-ind-section h2 {
+    font-size: 26px;
+  }
+
+  /* Industry Cards */
+  .industries-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .ind-card {
+    padding: 25px;
+  }
+
+  .ind-card-title {
+    font-size: 20px;
+  }
+
+  /* Wood Types Banner */
+  .wood-types-banner {
+    padding: 30px 20px;
+    border-radius: 12px;
+  }
+
+  .wood-types-content h3 {
+    font-size: 22px;
+  }
+
+  .wood-type-grid {
+    gap: 12px;
+  }
+
+  .wood-type-item {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  /* Logistics Section */
+  .logistics-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .logistics-info h2 {
+    font-size: 28px;
+  }
+
+  .logistics-intro {
+    font-size: 15px;
+  }
+
+  .logistics-visual {
+    height: 260px;
+  }
+
+  .truck-card {
+    padding: 15px 20px;
+  }
+
+  .truck-icon {
+    font-size: 26px;
+  }
+
+  /* Why Choose Us */
+  .why-ind-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-box {
+    padding: 25px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+
+  .ind-title {
+    font-size: 26px;
+  }
+
+  .ind-subtitle {
+    font-size: 15px;
+  }
+
+  .section-head h2,
+  .why-ind-section h2 {
+    font-size: 24px;
+  }
+
+  .logistics-info h2 {
+    font-size: 24px;
+  }
+
+  .feat-item {
+    gap: 10px;
+  }
+
+  .feat-item h4 {
+    font-size: 15px;
+  }
+
+  .feat-item p {
+    font-size: 13px;
+  }
 }

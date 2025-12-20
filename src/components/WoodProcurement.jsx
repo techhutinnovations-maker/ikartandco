@@ -1,5 +1,19 @@
 import React from 'react';
 import '../assets/css/WoodProcurement.css';
+import { 
+  FaHandshake, 
+  FaTruck, 
+  FaCheckCircle, 
+  FaSeedling, 
+  FaTree, 
+  FaGavel, 
+  FaIndustry, 
+  FaMoneyBillWave, 
+  FaRulerCombined, 
+  FaGlobe, 
+  FaCalendarCheck, 
+  FaWarehouse 
+} from "react-icons/fa";
 
 const WoodProcurement = () => {
   
@@ -29,13 +43,32 @@ const WoodProcurement = () => {
     { num: "06", title: "Fast Payment", desc: "Clear billing, quick settlement, and no delays — guaranteed transparency." }
   ];
 
+  // Refactored Trust Points with realistic icons
   const trustPoints = [
-    "Direct purchases with no commission agents",
-    "Fast payments and honest measurements",
-    "Hassle-free process from inspection to loading",
-    "High capacity to buy large volumes",
-    "Multi-state procurement teams",
-    "Year-round purchasing ability"
+    {
+      icon: <FaHandshake />,
+      text: "Direct purchases with no commission agents"
+    },
+    {
+      icon: <FaMoneyBillWave />,
+      text: "Fast payments and honest measurements"
+    },
+    {
+      icon: <FaCheckCircle />,
+      text: "Hassle-free process from inspection to loading"
+    },
+    {
+      icon: <FaWarehouse />,
+      text: "High capacity to buy large volumes"
+    },
+    {
+      icon: <FaGlobe />,
+      text: "Multi-state procurement teams"
+    },
+    {
+      icon: <FaCalendarCheck />,
+      text: "Year-round purchasing ability"
+    }
   ];
 
   return (
@@ -65,7 +98,7 @@ const WoodProcurement = () => {
             <div className="wood-tags">
               {woodTypes.map((wood, index) => (
                 <div key={index} className="wood-tag">
-                  <span className="tree-icon">🌲</span> {wood}
+                  <FaTree className="tree-icon-inner" /> {wood}
                 </div>
               ))}
             </div>
@@ -77,7 +110,7 @@ const WoodProcurement = () => {
             <ul className="source-list">
               {sources.map((source, index) => (
                 <li key={index}>
-                  <span className="check-icon">✓</span> {source}
+                  <FaCheckCircle className="check-icon-svg" /> {source}
                 </li>
               ))}
             </ul>
@@ -108,8 +141,10 @@ const WoodProcurement = () => {
           <div className="trust-grid">
             {trustPoints.map((point, index) => (
               <div key={index} className="trust-item">
-                <div className="trust-icon">🤝</div>
-                <p>{point}</p>
+                <div className="trust-icon">
+                  {point.icon}
+                </div>
+                <p>{point.text}</p>
               </div>
             ))}
           </div>
@@ -127,10 +162,10 @@ const WoodProcurement = () => {
             <div className="auction-split">
               <div className="auction-col">
                 <h3>Where We Participate</h3>
-                <ul>
-                  <li>🏛 Government Auctions</li>
-                  <li>🌲 Forest Department Sales</li>
-                  <li>🏭 Private Industry Auctions</li>
+                <ul className="icon-list">
+                  <li><FaGavel className="list-icon" /> Government Auctions</li>
+                  <li><FaTree className="list-icon" /> Forest Department Sales</li>
+                  <li><FaIndustry className="list-icon" /> Private Industry Auctions</li>
                 </ul>
               </div>
               
@@ -138,11 +173,11 @@ const WoodProcurement = () => {
 
               <div className="auction-col">
                 <h3>Our Strengths</h3>
-                <ul>
-                  <li>✓ Deep knowledge of documentation</li>
-                  <li>✓ Handling large-volume lots</li>
-                  <li>✓ Professional logistics support</li>
-                  <li>✓ Timely removal & safe transport</li>
+                <ul className="icon-list">
+                  <li><FaCheckCircle className="list-icon" /> Deep knowledge of documentation</li>
+                  <li><FaWarehouse className="list-icon" /> Handling large-volume lots</li>
+                  <li><FaTruck className="list-icon" /> Professional logistics support</li>
+                  <li><FaCheckCircle className="list-icon" /> Timely removal & safe transport</li>
                 </ul>
               </div>
             </div>

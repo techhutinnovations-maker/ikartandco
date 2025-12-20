@@ -25,7 +25,7 @@ const CompanyProfile = () => {
     "Telangana",
     "Karnataka",
     "Tamil Nadu",
-    "Maharashtra",
+    "Kerala",
     "North India"
   ];
 

@@ -32,10 +32,10 @@ const Contact = () => {
     toast.info('Sending message...', { autoClose: 2000 });
 
     emailjs.send(
-      'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-      'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+      'service_iz0tys1', // Replace with your EmailJS service ID
+      'template_marphja', // Replace with your EmailJS template ID
       formData,
-      'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+      'loWnrOpL0S7HH6xJv' // Replace with your EmailJS public key
     )
     .then((response) => {
       toast.success('Message sent successfully!');
@@ -63,13 +63,13 @@ ikartandco is here to support farmers, industries, and contractors with reliable
 
           <div className="wc-simple-details">
             <div className="wc-detail-item">
-              <strong>Email:</strong> hello@woodcraftmasters.com
+              <strong>Email:</strong> ikartandcosupplies@gmail.com
             </div>
             <div className="wc-detail-item">
-              <strong>Phone:</strong> +91 XXXXXXXXXX
+              <strong>Phone:</strong> +91 9908710654
             </div>
             <div className="wc-detail-item">
-              <strong>Address:</strong> Andhra Pradesh
+              <strong>Address:</strong> Saraswathi nilayam, 8-4/6, Padmavathipuram, Tirupati, Andhra Pradesh 517503
             </div>
           </div>
         </div>
