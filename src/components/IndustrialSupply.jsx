@@ -143,7 +143,8 @@ const IndustrialSupply = () => {
             {/* Right: Visual Map/Truck Concept */}
             <div className="logistics-visual">
               <div className="truck-card">
-                <div className="truck-icon">🚛</div>
+                <div className="truck-icon truck-move"><MdLocalShipping />
+                </div>
                 <div className="truck-text">
                   <h5>Dispatch Ready</h5>
                   <p>Route: South ➝ North India</p>

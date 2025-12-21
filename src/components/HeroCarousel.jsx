@@ -20,7 +20,7 @@ const slides = [
   {
     // Image: Modern Wood Interior / Furniture
     bg: living,
-    title: "Timeless Wood Interiors",
+    title: "Timeless Wood Supply",
     desc: "Supplying sustainable, premium-grade wood materials that support plywood, furniture, and paper manufacturing at scale.",
     btnText: "View Gallery",
     btnColor: "#8d6e63", // Brownish/Taupe

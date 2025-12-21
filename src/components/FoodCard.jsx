@@ -26,7 +26,7 @@ const Projects = () => {
         <div className="projects-card">
           <img src={learnBuildImg} alt="Timber Selection" />
           <div className="projects-card-content">
-            <h3><span className="highlight">Premium Timber Selection</span></h3>
+            <h3><span className="highlightss">Premium Timber Selection</span></h3>
             <p>
               We carefully source high-grade wood from trusted suppliers. Every log is inspected
               for strength, texture, and durability to ensure only the finest raw material enters

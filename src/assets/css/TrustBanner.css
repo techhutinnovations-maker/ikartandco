@@ -25,7 +25,7 @@
 /* MAIN BODY */
 .ribbon-content {
   position: relative;
-  background: linear-gradient(135deg, #a4161a 0%, #660708 100%);
+  background: linear-gradient(135deg, #000 0%, #000 100%);
   padding: 20px 60px;
   border-radius: 4px;
   z-index: 10;
@@ -75,7 +75,7 @@
   top: 10px;
   width: 80px;
   height: 100%;
-  background: #3e0505; /* Darker back-side */
+  background: #000; /* Darker back-side */
   z-index: 5;
   clip-path: polygon(0% 0%, 100% 0%, 85% 50%, 100% 100%, 0% 100%);
 }

@@ -1,5 +1,7 @@
 import React from 'react';
 import '../assets/css/CompanyProfile.css';
+import { MdLocalShipping } from "react-icons/md";
+
 
 const CompanyProfile = () => {
   const values = [
@@ -31,7 +33,7 @@ const CompanyProfile = () => {
 
   return (
     <section className="company-profile-section">
-      
+
       {/* NEW: Profile Header Section */}
       <div className="profile-header">
         <div className="header-content">
@@ -42,29 +44,27 @@ const CompanyProfile = () => {
           </h1>
           <div className="title-separator"></div>
           <p className="profile-sub-desc">
-            Reliable sourcing, fair pricing, and seamless delivery of plantation wood, 
+            Reliable sourcing, fair pricing, and seamless delivery of plantation wood,
             construction timber, and industrial raw material.
           </p>
         </div>
       </div>
 
       <div className="profile-container">
-        
+
         {/* SECTION 1: Mission & Vision */}
         <div className="mv-grid">
           <div className="mv-card mission">
-            <div className="mv-icon-bg">🎯</div>
             <h3 className="mv-title">Our Mission</h3>
             <p className="mv-text">
-              To build a transparent, efficient, and sustainable wood supply chain that 
+              To build a transparent, efficient, and sustainable wood supply chain that
               supports farmers, empowers industries, and strengthens India’s manufacturing ecosystem.
             </p>
           </div>
           <div className="mv-card vision">
-            <div className="mv-icon-bg">🚀</div>
             <h3 className="mv-title">Our Vision</h3>
             <p className="mv-text">
-              To be South India’s most trusted, reliable, and professional partner for 
+              To be South India’s most trusted, reliable, and professional partner for
               plantation wood sourcing, construction timber supply, and industrial wood logistics.
             </p>
           </div>
@@ -76,7 +76,7 @@ const CompanyProfile = () => {
             <h2 className="section-heading">Our Core Values</h2>
             <p className="section-sub">The principles that drive our operations</p>
           </div>
-          
+
           <div className="values-grid">
             {values.map((item, index) => (
               <div key={index} className="value-card">
@@ -90,7 +90,7 @@ const CompanyProfile = () => {
 
         {/* SECTION 3: Why Choose Us & Service Regions */}
         <div className="split-info-section">
-          
+
           {/* Why Choose ikartandco */}
           <div className="info-block why-us">
             <h2 className="section-heading">Why Choose ikartandco</h2>
@@ -108,7 +108,7 @@ const CompanyProfile = () => {
           <div className="info-block regions">
             <h2 className="section-heading">Service Regions</h2>
             <p className="region-sub">Reliable logistics across key territories:</p>
-            
+
             <div className="regions-tags">
               {regions.map((region, index) => (
                 <span key={index} className="region-tag">
@@ -118,18 +118,20 @@ const CompanyProfile = () => {
             </div>
 
             {/* Stylized Map Placeholder */}
-            <div className="map-visual">
-              <div className="map-dots"></div>
-              <div className="map-content">
-                <span className="map-icon">🚛</span>
-                <span>Pan-India Logistics Network</span>
+
+              <div className="map-visual">
+                <div className="map-dots"></div>
+                <div className="map-content">
+                  <span className="map-icon truck-move">
+                    <MdLocalShipping />
+                  </span>
+                  <span>Pan-India Logistics Network</span>
+                </div>
               </div>
             </div>
           </div>
-
         </div>
 
-      </div>
     </section>
   );
 };
