@@ -25,7 +25,7 @@
 /* MAIN BODY */
 .ribbon-content {
   position: relative;
-  background: linear-gradient(135deg, #000 0%, #000 100%);
+  background: linear-gradient(135deg, #A6060B 0%, #A6060B 100%);
   padding: 20px 60px;
   border-radius: 4px;
   z-index: 10;
@@ -64,7 +64,7 @@
 }
 
 .separator {
-  color: #ba181b;
+  color: #fff;
   margin: 0 15px;
   font-weight: 300;
 }
@@ -75,7 +75,7 @@
   top: 10px;
   width: 80px;
   height: 100%;
-  background: #000; /* Darker back-side */
+  background: #A6060B; /* Darker back-side */
   z-index: 5;
   clip-path: polygon(0% 0%, 100% 0%, 85% 50%, 100% 100%, 0% 100%);
 }
@@ -105,7 +105,7 @@
   font-style: italic;
 }
 
-.highlight {
+.highlights {
   font-weight: 600;
   color: #660708;
   border-bottom: 2px solid rgba(164, 22, 26, 0.2);

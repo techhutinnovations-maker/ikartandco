@@ -63,7 +63,7 @@ ikartandco is here to support farmers, industries, and contractors with reliable
 
           <div className="wc-simple-details">
             <div className="wc-detail-item">
-              <strong>Email:</strong> ikartandcosupplies@gmail.com
+              <strong>Email:</strong> ikartandco@gmail.com
             </div>
             <div className="wc-detail-item">
               <strong>Phone:</strong> +91 9908710654

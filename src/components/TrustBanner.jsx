@@ -14,7 +14,7 @@ const TrustBanner = () => {
           <div className="ribbon-content">
             <div className="ribbon-shimmer"></div>
             <h2 className="ribbon-text">
-              Authentic Materials <span className="separator">•</span> Unmatched Durability
+              Authentic Materials <span className="separator">•</span> Unmatched Durability<span className="separator">•</span> Transparent
             </h2>
           </div>
         </div>
@@ -22,7 +22,7 @@ const TrustBanner = () => {
 
       <div className="sub-text-wrapper">
         <p className="trust-sub">
-          “We don’t just supply timber. We provide enduring materials that form the foundation of <span className="highlight">lasting structures</span>.”
+          “We don’t just supply timber. We provide enduring materials that form the foundation of <span className="highlights">lasting structures</span>.”
         </p>
       </div>
     </section>

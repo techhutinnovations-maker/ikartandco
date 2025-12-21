@@ -3,7 +3,7 @@ import '../assets/css/IndustrialSupply.css';
 
 import { 
   MdFactory, 
-  MdConstruction, 
+  MdApartment , 
   MdLocalShipping 
 } from 'react-icons/md';
 
@@ -30,7 +30,7 @@ const IndustrialSupply = () => {
     },
     {
       title: "Construction Industry",
-       icon: <MdConstruction />,
+       icon: <MdApartment  />,
       desc: "Supply of construction wood bars (Shuttering & Scaffolding).",
       clients: [
         "Andhra Pradesh","Telangana","Pune Region", "Mumbai Region", "Delhi NCR", 
