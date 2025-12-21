@@ -125,8 +125,8 @@
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-  .ribbon-text { font-size: 20px; }
+  .ribbon-text { font-size: 15px; }
   .ribbon-content { padding: 15px 30px; }
-  .ribbon-wing { width: 40px; }
+  /* .ribbon-wing { width: 40px; } */
   .trust-sub { font-size: 18px; }
 }
