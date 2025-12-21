@@ -17,8 +17,8 @@ function App() {
         <Route path="/aboutus" element={<CompanyProfile />} />
         <Route path="/procurement" element={<WoodProcurement />} />
         <Route path="/supply" element={<IndustrialSupply />} />
-        <Route path="/terms-and-conditions" element={<TermsConditions />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        {/* <Route path="/terms-and-conditions" element={<TermsConditions />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
       </Route>
     </Routes>
   );
