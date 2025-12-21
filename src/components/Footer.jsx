@@ -28,6 +28,8 @@ const Footer = () => {
             <Link to="/aboutus">About Us</Link>
             <Link to="/procurement">Procurement</Link>
             <Link to="/supply">Industrial Supply</Link>
+            {/* <Link to="/terms-and-conditions">Terms and Conditions</Link>
+            <Link to="/privacy-policy">Privacy Policy</Link> */}
           </nav>
         </div>
 
