@@ -9,7 +9,8 @@ const CompanyProfile = () => {
     { title: "Transparency", icon: "🔍", desc: "Clear communication and open dealings at every stage." },
     { title: "Commitment", icon: "🤝", desc: "Timely payments, timely deliveries, and consistent support." },
     { title: "Quality", icon: "🌲", desc: "Verified, well-measured, and properly handled wood supply." },
-    { title: "Responsibility", icon: "🌱", desc: "Ethical sourcing and sustainable operations." }
+    { title: "Responsibility", icon: "🌱", desc: "Ethical sourcing and sustainable operations." },
+    { title: "Entrepreneurial Support", icon: "🎯", desc: "Encouraging innovation by funding and nurturing promising startup ideas." }
   ];
 
   const reasons = [
@@ -59,6 +60,7 @@ const CompanyProfile = () => {
             <p className="mv-text">
               To build a transparent, efficient, and sustainable wood supply chain that
               supports farmers, empowers industries, and strengthens India’s manufacturing ecosystem.
+              while also empowering new entrepreneurs by funding and nurturing innovative business ideas for long-term growth.
             </p>
           </div>
           <div className="mv-card vision">
@@ -66,6 +68,7 @@ const CompanyProfile = () => {
             <p className="mv-text">
               To be South India’s most trusted, reliable, and professional partner for
               plantation wood sourcing, construction timber supply, and industrial wood logistics.
+              and to evolve into a respected startup funding and incubation platform that helps build the next generation of successful companies.
             </p>
           </div>
         </div>

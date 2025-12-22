@@ -42,7 +42,7 @@ const Header = () => {
           </NavLink>
 
           <NavLink to="/procurement" onClick={closeMenu}>
-            sourcing
+            Sourcing
           </NavLink>
 
           <NavLink to="/supply" onClick={closeMenu}>

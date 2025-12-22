@@ -26,7 +26,7 @@ const Footer = () => {
             <Link to="/">Home</Link>
             <Link to="/startup">Startup</Link>
             <Link to="/aboutus">About Us</Link>
-            <Link to="/procurement">Procurement</Link>
+            <Link to="/procurement">Sourcing</Link>
             <Link to="/supply">Industrial Supply</Link>
             {/* <Link to="/terms-and-conditions">Terms and Conditions</Link>
             <Link to="/privacy-policy">Privacy Policy</Link> */}
