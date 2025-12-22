@@ -39,7 +39,7 @@ const slides = [
     bg: startup,
     title: "Where Ambition Meets Support",
     desc: "We Don’t Just Fund Ideas – We Nurture Them",
-    btnText: "Start a Project",
+    btnText: "Startup",
     btnColor: "#d35400",  // warm wood tone
     link: "/startup"
   }
