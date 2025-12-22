@@ -113,7 +113,7 @@ const Contact = () => {
               <input
                 type="tel"
                 name="phone"
-                placeholder="+1 234 567 890"
+                placeholder="+91 234 567 890"
                 onChange={handleChange}
                 value={formData.phone}
                 className="wc-input"
