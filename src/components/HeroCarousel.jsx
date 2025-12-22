@@ -13,7 +13,7 @@ const slides = [
     bg: firstwood,
     title: "Masterful Craftsmanship",
     desc: "Experience the art of wood supply with premium-grade materials engineered to meet modern manufacturing standards.",
-    btnText: "Explore Collection",
+    btnText: "Explore",
     btnColor: "#d35400", 
     link: "/aboutus"
   },
@@ -22,9 +22,9 @@ const slides = [
     bg: living,
     title: "Timeless Wood Supply",
     desc: "Supplying sustainable, premium-grade wood materials that support plywood, furniture, and paper manufacturing at scale.",
-    btnText: "View Gallery",
-    btnColor: "#8d6e63", // Brownish/Taupe
-    link: "/aboutus"
+    btnText: "Sourcing",
+    btnColor: "#d35400", // Brownish/Taupe
+    link: "/procurement"
   },
   {
     // Image: Close up raw wood texture / Nature
@@ -32,15 +32,15 @@ const slides = [
     title: "Premium Raw Materials",
     desc: "Sourced from the finest forests, our timber ensures durability, distinct grain patterns, and natural beauty.",
     btnText: "Our Materials",
-    btnColor: "#5d4037", 
-    link: "/procurement"
+    btnColor: "#d35400", 
+    link: "/supply"
   },
   {
     bg: startup,
     title: "Where Ambition Meets Support",
     desc: "We Don’t Just Fund Ideas – We Nurture Them",
     btnText: "Start a Project",
-    btnColor: "#a05a2c",  // warm wood tone
+    btnColor: "#d35400",  // warm wood tone
     link: "/startup"
   }
 ];

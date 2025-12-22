@@ -36,7 +36,7 @@ const Startup = () => {
               network, and operational muscle to turn raw ideas into scalable market leaders.
             </p>
             <div className="ss-hero-btns">
-              <a href="#contact" className="ss-btn-primary">Pitch Your Idea</a>
+              <a href="/#contact" className="ss-btn-primary">Pitch Your Idea</a>
               <a href="#approach" className="ss-btn-secondary">Our Philosophy</a>
             </div>
           </motion.div>

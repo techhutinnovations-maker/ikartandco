@@ -37,27 +37,31 @@ const Contact = () => {
       formData,
       'loWnrOpL0S7HH6xJv' // Replace with your EmailJS public key
     )
-    .then((response) => {
-      toast.success('Message sent successfully!');
-      setFormData({ name: '', email: '', phone: '', message: '' });
-    }, (error) => {
-      toast.error('Failed to send message. Please try again later.');
-      console.error('EmailJS Error:', error);
-    });
+      .then((response) => {
+        toast.success('Message sent successfully!');
+        setFormData({ name: '', email: '', phone: '', message: '' });
+      }, (error) => {
+        toast.error('Failed to send message. Please try again later.');
+        console.error('EmailJS Error:', error);
+      });
   };
 
   return (
     <section className="wc-contact-section" id="contact">
       <div className="wc-contact-container">
-        
+
         {/* LEFT SIDE */}
         <div className="wc-contact-content">
           <h4 className="wc-sub-title">Get in Touch</h4>
           <h2 className="wc-main-title">We’d Love To Hear From You</h2>
           <p className="wc-contact-desc">
-           Looking for a trusted partner for wood procurement, construction timber supply, or industrial raw material?
-ikartandco is here to support farmers, industries, and contractors with reliable, honest, and professional service.
+            <strong>Timber Grades:</strong> 7, 316, 3, 2021, 1803 <br />
+            <strong>Thickness:</strong> 3 inch & above diameter <br /><br />
+
+            Looking for a trusted partner for wood procurement, construction timber supply, or industrial raw material? <br />
+            <strong>ikartandco</strong> is here to support farmers, industries, and contractors with reliable, honest, and professional service.
           </p>
+
 
           <h5 className="wc-sub-title">ikartandco – Efficient. Transparent. Trusted.</h5>
 
@@ -77,14 +81,14 @@ ikartandco is here to support farmers, industries, and contractors with reliable
         {/* RIGHT SIDE FORM */}
         <div className="wc-form-wrapper">
           <form onSubmit={handleSubmit} className="wc-form">
-            
+
             <div className="wc-form-group">
               <label className="wc-label">Your Name</label>
-              <input 
-                type="text" 
-                name="name" 
+              <input
+                type="text"
+                name="name"
                 placeholder="John Doe"
-                required 
+                required
                 onChange={handleChange}
                 value={formData.name}
                 className="wc-input"
@@ -93,11 +97,11 @@ ikartandco is here to support farmers, industries, and contractors with reliable
 
             <div className="wc-form-group">
               <label className="wc-label">Email Address</label>
-              <input 
-                type="email" 
-                name="email" 
+              <input
+                type="email"
+                name="email"
                 placeholder="john@example.com"
-                required 
+                required
                 onChange={handleChange}
                 value={formData.email}
                 className="wc-input"
@@ -106,9 +110,9 @@ ikartandco is here to support farmers, industries, and contractors with reliable
 
             <div className="wc-form-group">
               <label className="wc-label">Phone Number</label>
-              <input 
-                type="tel" 
-                name="phone" 
+              <input
+                type="tel"
+                name="phone"
                 placeholder="+1 234 567 890"
                 onChange={handleChange}
                 value={formData.phone}
@@ -118,11 +122,11 @@ ikartandco is here to support farmers, industries, and contractors with reliable
 
             <div className="wc-form-group">
               <label className="wc-label">Message</label>
-              <textarea 
+              <textarea
                 name="message"
                 rows="4"
                 placeholder="How can we help you?"
-                required 
+                required
                 onChange={handleChange}
                 value={formData.message}
                 className="wc-textarea"
@@ -137,7 +141,7 @@ ikartandco is here to support farmers, industries, and contractors with reliable
       </div>
 
       {/* Toast Container */}
-      <ToastContainer 
+      <ToastContainer
         position="top-right"
         autoClose={3000}
         hideProgressBar={false}

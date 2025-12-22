@@ -58,17 +58,13 @@ const CompanyProfile = () => {
           <div className="mv-card mission">
             <h3 className="mv-title">Our Mission</h3>
             <p className="mv-text">
-              To build a transparent, efficient, and sustainable wood supply chain that
-              supports farmers, empowers industries, and strengthens India’s manufacturing ecosystem.
-              while also empowering new entrepreneurs by funding and nurturing innovative business ideas for long-term growth.
+              To build a transparent and sustainable wood supply chain while empowering farmers, industries, and new entrepreneurs through long-term innovation and growth.
             </p>
           </div>
           <div className="mv-card vision">
             <h3 className="mv-title">Our Vision</h3>
             <p className="mv-text">
-              To be South India’s most trusted, reliable, and professional partner for
-              plantation wood sourcing, construction timber supply, and industrial wood logistics.
-              and to evolve into a respected startup funding and incubation platform that helps build the next generation of successful companies.
+              To be South India’s most trusted partner for plantation wood sourcing and industrial timber logistics, while evolving into a startup funding and incubation platform that builds the next generation of successful companies.
             </p>
           </div>
         </div>
