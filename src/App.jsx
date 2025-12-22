@@ -5,10 +5,12 @@ import Startup from "./components/Startup";
 import CompanyProfile from "./components/CompanyProfile";
 import WoodProcurement from "./components/WoodProcurement";
 import IndustrialSupply from "./components/IndustrialSupply";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 
 function App() {
   return (
+    <>
     <Routes>
       <Route element={<MainLayout />}>
         <Route path="/" element={<Homepage />} />
@@ -16,8 +18,11 @@ function App() {
         <Route path="/aboutus" element={<CompanyProfile />} />
         <Route path="/procurement" element={<WoodProcurement />} />
         <Route path="/supply" element={<IndustrialSupply />} />
+        
       </Route>
     </Routes>
+    <WhatsAppButton />
+    </>
   );
 }
 

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../assets/css/HeroCarousel.css';
-import building from '../assets/images/building.jpg';
+import building from '../assets/images/raw.jpeg';
 import living from '../assets/images/living.jpg';
-import startup from '../assets/images/startup.jpg';
+import startup from '../assets/images/startup.jpeg';
 import firstwood from '../assets/images/firstwood.jpg';
 import { useNavigate } from 'react-router-dom';
 
@@ -37,8 +37,8 @@ const slides = [
   },
   {
     bg: startup,
-    title: "Start Your Dream Project",
-    desc: "From custom wooden furniture to full interior setups — our expert craftsmen turn your vision into reality with precision and passion.",
+    title: "Where Ambition Meets Support",
+    desc: "We Don’t Just Fund Ideas – We Nurture Them",
     btnText: "Start a Project",
     btnColor: "#a05a2c",  // warm wood tone
     link: "/startup"
